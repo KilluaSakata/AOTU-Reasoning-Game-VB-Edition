@@ -1,0 +1,12 @@
+D:\source\repos\AOTU-Window\AOTU-Window\obj\Debug\AOTU-Window.vbprojAssemblyReference.cache
+D:\source\repos\AOTU-Window\AOTU-Window\obj\Debug\AOTU_Window.Form1.resources
+D:\source\repos\AOTU-Window\AOTU-Window\obj\Debug\AOTU_Window.Resources.resources
+D:\source\repos\AOTU-Window\AOTU-Window\obj\Debug\AOTU-Window.vbproj.GenerateResource.cache
+D:\source\repos\AOTU-Window\AOTU-Window\obj\Debug\AOTU-Window.vbproj.CoreCompileInputs.cache
+D:\source\repos\AOTU-Window\AOTU-Window\bin\Debug\AOTU 推理游戏.exe.config
+D:\source\repos\AOTU-Window\AOTU-Window\bin\Debug\AOTU 推理游戏.exe
+D:\source\repos\AOTU-Window\AOTU-Window\bin\Debug\AOTU 推理游戏.pdb
+D:\source\repos\AOTU-Window\AOTU-Window\bin\Debug\AOTU 推理游戏.xml
+D:\source\repos\AOTU-Window\AOTU-Window\obj\Debug\AOTU 推理游戏.exe
+D:\source\repos\AOTU-Window\AOTU-Window\obj\Debug\AOTU 推理游戏.xml
+D:\source\repos\AOTU-Window\AOTU-Window\obj\Debug\AOTU 推理游戏.pdb
