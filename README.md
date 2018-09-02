@@ -14,14 +14,14 @@ Change UI Style.
 
 # V1.0 Master Update
 以下是介绍。
-# English
+## English ##
 For more details,please watch the wiki.
 A Reasoning game written by Visual Basic.A very simple project.
 And...The language of the program is Simplified Chinese.
 Before you play,please watch AOTU Season 1 and 2.
 The Story is written by 半青不白.(BCY:@我似鸽莫得感情的刺客)
 
-# 中文
+## 中文 ##
 如果需要更多信息，请查看Wiki。
 1.使用VB编写的十分简单的小程序。语言是简体中文。
 2.玩之前请先补全番。
