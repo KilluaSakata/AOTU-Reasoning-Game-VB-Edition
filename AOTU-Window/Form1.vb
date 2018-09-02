@@ -458,7 +458,9 @@ Created By Visual Studio 2017.
     End Sub
 
     Private Sub 更新日志ToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles 更新日志ToolStripMenuItem.Click
-        MsgBox("更新日志:
+        MsgBox("UI Branch 2的更新日志请在更新说明中查看。
+以下是Alpha普通版本的更新日志。
+更新日志:
 V1.4
 1.微调UI。
 2.调整临时文本框大小。
@@ -477,5 +479,15 @@ V1.0
 --------------------------
 可能有Bug或者一些错误，欢迎指正。
 半次元:@雷翎 Bilibili:@雷家皮皮翎")
+    End Sub
+
+    Private Sub UIBranch2更新说明ToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles UIBranch2更新说明ToolStripMenuItem.Click
+        MsgBox("这里是测试版UI界面，可能再可用性上不如V1.4的Alpha普通版。
+以后每次的UI更新将先推送UI Branch的Alpha分支，后推送新版本的Alpha分支。
+UI Branch 2可能随时随地出现大的UI调整，请注意。
+UI Branch 2 版本更新日志
+V1.0：
+1.修改文字提示语言，更加简练。
+2.提供GroupBox，为章节与嫌疑人中的选项括起来。")
     End Sub
 End Class
