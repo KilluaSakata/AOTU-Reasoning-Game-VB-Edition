@@ -459,6 +459,10 @@ Created By Visual Studio 2017.
 
     Private Sub 更新日志ToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles 更新日志ToolStripMenuItem.Click
         MsgBox("更新日志:
+V1.4
+1.微调UI。
+2.调整临时文本框大小。
+3.重构设置菜单。
 V1.3
 1.重构UI。
 2.增加临时文本框，用于记录有用的信息。
@@ -473,13 +477,5 @@ V1.0
 --------------------------
 可能有Bug或者一些错误，欢迎指正。
 半次元:@雷翎 Bilibili:@雷家皮皮翎")
-    End Sub
-
-    Private Sub NotifyIcon1_MouseDoubleClick(sender As Object, e As MouseEventArgs) Handles NotifyIcon1.MouseDoubleClick
-
-    End Sub
-
-    Private Sub Label5_Click(sender As Object, e As EventArgs) Handles Label5.Click
-
     End Sub
 End Class
