@@ -1,3 +1,9 @@
+# V1.4 Alpha / UIBranch2 V1.1 更新（中文）
+修改大量Msgbox标题，增加警告信息，增加退出提示。（与普通Alpha分支1.5版更新相同)
+
+# V1.4 Alpha / UIBranch2 V1.1 Update（English）
+Change UI Style
+
 # V1.3 Alpha Update(English)
 1.Add a textbox used to make users write some important message of the game down easily.
 2.Change UI Style.
