@@ -23,3 +23,4 @@ The Story is written by 半青不白.(BCY:@我似鸽莫得感情的刺客)
 代码已经开源处理。
 # Version Alpha1.4
 # UI Branch 1.0
+# 同步更新

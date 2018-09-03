@@ -37,6 +37,7 @@ Partial Class Form1
         Me.关于ToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.关于AOTU推理游戏ToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.更新日志ToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.UIBranch2更新说明ToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.Button5 = New System.Windows.Forms.Button()
         Me.Button6 = New System.Windows.Forms.Button()
         Me.Button7 = New System.Windows.Forms.Button()
@@ -69,7 +70,6 @@ Partial Class Form1
         Me.RichTextBox1 = New System.Windows.Forms.RichTextBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
-        Me.UIBranch2更新说明ToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
         Me.MenuStrip1.SuspendLayout()
@@ -119,7 +119,7 @@ Partial Class Form1
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
         Me.MenuStrip1.Padding = New System.Windows.Forms.Padding(7, 2, 0, 2)
-        Me.MenuStrip1.Size = New System.Drawing.Size(652, 25)
+        Me.MenuStrip1.Size = New System.Drawing.Size(652, 28)
         Me.MenuStrip1.TabIndex = 4
         Me.MenuStrip1.Text = "MenuStrip1"
         '
@@ -127,59 +127,65 @@ Partial Class Form1
         '
         Me.设置ToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.刷新ToolStripMenuItem, Me.退出ToolStripMenuItem})
         Me.设置ToolStripMenuItem.Name = "设置ToolStripMenuItem"
-        Me.设置ToolStripMenuItem.Size = New System.Drawing.Size(44, 21)
+        Me.设置ToolStripMenuItem.Size = New System.Drawing.Size(51, 24)
         Me.设置ToolStripMenuItem.Text = "设置"
         '
         '刷新ToolStripMenuItem
         '
         Me.刷新ToolStripMenuItem.Name = "刷新ToolStripMenuItem"
-        Me.刷新ToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.刷新ToolStripMenuItem.Size = New System.Drawing.Size(144, 26)
         Me.刷新ToolStripMenuItem.Text = "重新开始"
         '
         '退出ToolStripMenuItem
         '
         Me.退出ToolStripMenuItem.Name = "退出ToolStripMenuItem"
-        Me.退出ToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.退出ToolStripMenuItem.Size = New System.Drawing.Size(144, 26)
         Me.退出ToolStripMenuItem.Text = "退出"
         '
         '答案ToolStripMenuItem
         '
         Me.答案ToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.查看思路ToolStripMenuItem})
         Me.答案ToolStripMenuItem.Name = "答案ToolStripMenuItem"
-        Me.答案ToolStripMenuItem.Size = New System.Drawing.Size(44, 21)
+        Me.答案ToolStripMenuItem.Size = New System.Drawing.Size(51, 24)
         Me.答案ToolStripMenuItem.Text = "答案"
         '
         '查看思路ToolStripMenuItem
         '
         Me.查看思路ToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.确定查看ToolStripMenuItem})
         Me.查看思路ToolStripMenuItem.Name = "查看思路ToolStripMenuItem"
-        Me.查看思路ToolStripMenuItem.Size = New System.Drawing.Size(160, 22)
+        Me.查看思路ToolStripMenuItem.Size = New System.Drawing.Size(189, 26)
         Me.查看思路ToolStripMenuItem.Text = "查看答案与思路"
         '
         '确定查看ToolStripMenuItem
         '
         Me.确定查看ToolStripMenuItem.Name = "确定查看ToolStripMenuItem"
-        Me.确定查看ToolStripMenuItem.Size = New System.Drawing.Size(124, 22)
+        Me.确定查看ToolStripMenuItem.Size = New System.Drawing.Size(144, 26)
         Me.确定查看ToolStripMenuItem.Text = "确定查看"
         '
         '关于ToolStripMenuItem
         '
         Me.关于ToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.关于AOTU推理游戏ToolStripMenuItem, Me.更新日志ToolStripMenuItem, Me.UIBranch2更新说明ToolStripMenuItem})
         Me.关于ToolStripMenuItem.Name = "关于ToolStripMenuItem"
-        Me.关于ToolStripMenuItem.Size = New System.Drawing.Size(44, 21)
+        Me.关于ToolStripMenuItem.Size = New System.Drawing.Size(51, 24)
         Me.关于ToolStripMenuItem.Text = "关于"
         '
         '关于AOTU推理游戏ToolStripMenuItem
         '
         Me.关于AOTU推理游戏ToolStripMenuItem.Name = "关于AOTU推理游戏ToolStripMenuItem"
-        Me.关于AOTU推理游戏ToolStripMenuItem.Size = New System.Drawing.Size(196, 22)
+        Me.关于AOTU推理游戏ToolStripMenuItem.Size = New System.Drawing.Size(229, 26)
         Me.关于AOTU推理游戏ToolStripMenuItem.Text = "关于 AOTU 推理游戏"
         '
         '更新日志ToolStripMenuItem
         '
         Me.更新日志ToolStripMenuItem.Name = "更新日志ToolStripMenuItem"
-        Me.更新日志ToolStripMenuItem.Size = New System.Drawing.Size(196, 22)
+        Me.更新日志ToolStripMenuItem.Size = New System.Drawing.Size(229, 26)
         Me.更新日志ToolStripMenuItem.Text = "更新日志"
+        '
+        'UIBranch2更新说明ToolStripMenuItem
+        '
+        Me.UIBranch2更新说明ToolStripMenuItem.Name = "UIBranch2更新说明ToolStripMenuItem"
+        Me.UIBranch2更新说明ToolStripMenuItem.Size = New System.Drawing.Size(229, 26)
+        Me.UIBranch2更新说明ToolStripMenuItem.Text = "UI Branch 2 更新说明"
         '
         'Button5
         '
@@ -267,7 +273,7 @@ Partial Class Form1
         Me.CheckBox1.AutoSize = True
         Me.CheckBox1.Location = New System.Drawing.Point(6, 17)
         Me.CheckBox1.Name = "CheckBox1"
-        Me.CheckBox1.Size = New System.Drawing.Size(54, 18)
+        Me.CheckBox1.Size = New System.Drawing.Size(64, 21)
         Me.CheckBox1.TabIndex = 17
         Me.CheckBox1.Text = "雷狮"
         Me.CheckBox1.UseVisualStyleBackColor = True
@@ -277,7 +283,7 @@ Partial Class Form1
         Me.CheckBox2.AutoSize = True
         Me.CheckBox2.Location = New System.Drawing.Point(60, 17)
         Me.CheckBox2.Name = "CheckBox2"
-        Me.CheckBox2.Size = New System.Drawing.Size(68, 18)
+        Me.CheckBox2.Size = New System.Drawing.Size(81, 21)
         Me.CheckBox2.TabIndex = 18
         Me.CheckBox2.Text = "安迷修"
         Me.CheckBox2.UseVisualStyleBackColor = True
@@ -287,7 +293,7 @@ Partial Class Form1
         Me.CheckBox3.AutoSize = True
         Me.CheckBox3.Location = New System.Drawing.Point(134, 17)
         Me.CheckBox3.Name = "CheckBox3"
-        Me.CheckBox3.Size = New System.Drawing.Size(40, 18)
+        Me.CheckBox3.Size = New System.Drawing.Size(47, 21)
         Me.CheckBox3.TabIndex = 19
         Me.CheckBox3.Text = "金"
         Me.CheckBox3.UseVisualStyleBackColor = True
@@ -297,7 +303,7 @@ Partial Class Form1
         Me.CheckBox4.AutoSize = True
         Me.CheckBox4.Location = New System.Drawing.Point(180, 17)
         Me.CheckBox4.Name = "CheckBox4"
-        Me.CheckBox4.Size = New System.Drawing.Size(54, 18)
+        Me.CheckBox4.Size = New System.Drawing.Size(64, 21)
         Me.CheckBox4.TabIndex = 20
         Me.CheckBox4.Text = "格瑞"
         Me.CheckBox4.UseVisualStyleBackColor = True
@@ -307,7 +313,7 @@ Partial Class Form1
         Me.CheckBox5.AutoSize = True
         Me.CheckBox5.Location = New System.Drawing.Point(240, 17)
         Me.CheckBox5.Name = "CheckBox5"
-        Me.CheckBox5.Size = New System.Drawing.Size(54, 18)
+        Me.CheckBox5.Size = New System.Drawing.Size(64, 21)
         Me.CheckBox5.TabIndex = 21
         Me.CheckBox5.Text = "鬼狐"
         Me.CheckBox5.UseVisualStyleBackColor = True
@@ -317,7 +323,7 @@ Partial Class Form1
         Me.CheckBox6.AutoSize = True
         Me.CheckBox6.Location = New System.Drawing.Point(300, 17)
         Me.CheckBox6.Name = "CheckBox6"
-        Me.CheckBox6.Size = New System.Drawing.Size(54, 18)
+        Me.CheckBox6.Size = New System.Drawing.Size(64, 21)
         Me.CheckBox6.TabIndex = 22
         Me.CheckBox6.Text = "凯莉"
         Me.CheckBox6.UseVisualStyleBackColor = True
@@ -327,7 +333,7 @@ Partial Class Form1
         Me.CheckBox7.AutoSize = True
         Me.CheckBox7.Location = New System.Drawing.Point(360, 17)
         Me.CheckBox7.Name = "CheckBox7"
-        Me.CheckBox7.Size = New System.Drawing.Size(54, 18)
+        Me.CheckBox7.Size = New System.Drawing.Size(64, 21)
         Me.CheckBox7.TabIndex = 23
         Me.CheckBox7.Text = "艾比"
         Me.CheckBox7.UseVisualStyleBackColor = True
@@ -337,7 +343,7 @@ Partial Class Form1
         Me.CheckBox8.AutoSize = True
         Me.CheckBox8.Location = New System.Drawing.Point(420, 17)
         Me.CheckBox8.Name = "CheckBox8"
-        Me.CheckBox8.Size = New System.Drawing.Size(54, 18)
+        Me.CheckBox8.Size = New System.Drawing.Size(64, 21)
         Me.CheckBox8.TabIndex = 24
         Me.CheckBox8.Text = "埃米"
         Me.CheckBox8.UseVisualStyleBackColor = True
@@ -347,7 +353,7 @@ Partial Class Form1
         Me.CheckBox9.AutoSize = True
         Me.CheckBox9.Location = New System.Drawing.Point(480, 17)
         Me.CheckBox9.Name = "CheckBox9"
-        Me.CheckBox9.Size = New System.Drawing.Size(68, 18)
+        Me.CheckBox9.Size = New System.Drawing.Size(81, 21)
         Me.CheckBox9.TabIndex = 25
         Me.CheckBox9.Text = "帕洛斯"
         Me.CheckBox9.UseVisualStyleBackColor = True
@@ -358,7 +364,7 @@ Partial Class Form1
         Me.CheckBox10.Location = New System.Drawing.Point(103, 39)
         Me.CheckBox10.Name = "CheckBox10"
         Me.CheckBox10.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.CheckBox10.Size = New System.Drawing.Size(82, 18)
+        Me.CheckBox10.Size = New System.Drawing.Size(98, 21)
         Me.CheckBox10.TabIndex = 26
         Me.CheckBox10.Text = "嘉德罗斯"
         Me.CheckBox10.UseVisualStyleBackColor = True
@@ -368,7 +374,7 @@ Partial Class Form1
         Me.CheckBox11.AutoSize = True
         Me.CheckBox11.Location = New System.Drawing.Point(229, 39)
         Me.CheckBox11.Name = "CheckBox11"
-        Me.CheckBox11.Size = New System.Drawing.Size(54, 18)
+        Me.CheckBox11.Size = New System.Drawing.Size(64, 21)
         Me.CheckBox11.TabIndex = 27
         Me.CheckBox11.Text = "银爵"
         Me.CheckBox11.UseVisualStyleBackColor = True
@@ -378,7 +384,7 @@ Partial Class Form1
         Me.CheckBox12.AutoSize = True
         Me.CheckBox12.Location = New System.Drawing.Point(554, 39)
         Me.CheckBox12.Name = "CheckBox12"
-        Me.CheckBox12.Size = New System.Drawing.Size(54, 18)
+        Me.CheckBox12.Size = New System.Drawing.Size(64, 21)
         Me.CheckBox12.TabIndex = 28
         Me.CheckBox12.Text = "佩利"
         Me.CheckBox12.UseVisualStyleBackColor = True
@@ -388,7 +394,7 @@ Partial Class Form1
         Me.Label2.AutoSize = True
         Me.Label2.Location = New System.Drawing.Point(454, 36)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(105, 14)
+        Me.Label2.Size = New System.Drawing.Size(127, 17)
         Me.Label2.TabIndex = 29
         Me.Label2.Text = "需要游戏提示？"
         '
@@ -397,7 +403,7 @@ Partial Class Form1
         Me.Label3.AutoSize = True
         Me.Label3.Location = New System.Drawing.Point(9, 29)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(266, 14)
+        Me.Label3.Size = New System.Drawing.Size(323, 17)
         Me.Label3.TabIndex = 30
         Me.Label3.Text = "注意:每个章节在查阅一次后将自动消失。"
         '
@@ -406,7 +412,7 @@ Partial Class Form1
         Me.Label5.AutoSize = True
         Me.Label5.Location = New System.Drawing.Point(14, 346)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(252, 14)
+        Me.Label5.Size = New System.Drawing.Size(306, 17)
         Me.Label5.TabIndex = 32
         Me.Label5.Text = "请在下列嫌疑人中找到本次事件的真凶:"
         '
@@ -415,7 +421,7 @@ Partial Class Form1
         Me.CheckBox13.AutoSize = True
         Me.CheckBox13.Location = New System.Drawing.Point(6, 39)
         Me.CheckBox13.Name = "CheckBox13"
-        Me.CheckBox13.Size = New System.Drawing.Size(68, 18)
+        Me.CheckBox13.Size = New System.Drawing.Size(81, 21)
         Me.CheckBox13.TabIndex = 33
         Me.CheckBox13.Text = "丹尼尔"
         Me.CheckBox13.UseVisualStyleBackColor = True
@@ -425,7 +431,7 @@ Partial Class Form1
         Me.CheckBox14.AutoSize = True
         Me.CheckBox14.Location = New System.Drawing.Point(337, 39)
         Me.CheckBox14.Name = "CheckBox14"
-        Me.CheckBox14.Size = New System.Drawing.Size(54, 18)
+        Me.CheckBox14.Size = New System.Drawing.Size(64, 21)
         Me.CheckBox14.TabIndex = 34
         Me.CheckBox14.Text = "雷德"
         Me.CheckBox14.UseVisualStyleBackColor = True
@@ -435,7 +441,7 @@ Partial Class Form1
         Me.CheckBox15.AutoSize = True
         Me.CheckBox15.Location = New System.Drawing.Point(446, 39)
         Me.CheckBox15.Name = "CheckBox15"
-        Me.CheckBox15.Size = New System.Drawing.Size(54, 18)
+        Me.CheckBox15.Size = New System.Drawing.Size(64, 21)
         Me.CheckBox15.TabIndex = 35
         Me.CheckBox15.Text = "祖玛"
         Me.CheckBox15.UseVisualStyleBackColor = True
@@ -445,7 +451,7 @@ Partial Class Form1
         Me.CheckBox16.AutoSize = True
         Me.CheckBox16.Location = New System.Drawing.Point(554, 17)
         Me.CheckBox16.Name = "CheckBox16"
-        Me.CheckBox16.Size = New System.Drawing.Size(40, 18)
+        Me.CheckBox16.Size = New System.Drawing.Size(47, 21)
         Me.CheckBox16.TabIndex = 36
         Me.CheckBox16.Text = "秋"
         Me.CheckBox16.UseVisualStyleBackColor = True
@@ -468,7 +474,7 @@ Partial Class Form1
         Me.Label1.AutoSize = True
         Me.Label1.Location = New System.Drawing.Point(267, 346)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(273, 14)
+        Me.Label1.Size = New System.Drawing.Size(333, 17)
         Me.Label1.TabIndex = 38
         Me.Label1.Text = "(可多选,选项里有未登场人物,请仔细甄别)"
         '
@@ -477,15 +483,9 @@ Partial Class Form1
         Me.Label6.AutoSize = True
         Me.Label6.Location = New System.Drawing.Point(299, 36)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(84, 14)
+        Me.Label6.Size = New System.Drawing.Size(102, 17)
         Me.Label6.TabIndex = 39
         Me.Label6.Text = "信息记录框:"
-        '
-        'UIBranch2更新说明ToolStripMenuItem
-        '
-        Me.UIBranch2更新说明ToolStripMenuItem.Name = "UIBranch2更新说明ToolStripMenuItem"
-        Me.UIBranch2更新说明ToolStripMenuItem.Size = New System.Drawing.Size(196, 22)
-        Me.UIBranch2更新说明ToolStripMenuItem.Text = "UI Branch 2 更新说明"
         '
         'GroupBox1
         '
@@ -523,7 +523,7 @@ Partial Class Form1
         '
         'Form1
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 17.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(652, 436)
         Me.Controls.Add(Me.Label6)
@@ -552,7 +552,7 @@ Partial Class Form1
         Me.MainMenuStrip = Me.MenuStrip1
         Me.MaximizeBox = False
         Me.Name = "Form1"
-        Me.Text = "AOTU 推理游戏-UI Branch 2(Ver 1.0)-CoreAlpha V1.4"
+        Me.Text = "AOTU 推理游戏-UI Branch 2(Ver 1.1)-CoreAlpha V1.5"
         Me.MenuStrip1.ResumeLayout(False)
         Me.MenuStrip1.PerformLayout()
         Me.GroupBox2.ResumeLayout(False)

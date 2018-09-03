@@ -1,7 +1,11 @@
 ﻿Public Class Form1
-
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        MsgBox("这一次的分支更新，Alpha版本与UI Branch 2分支同时更新，因为做了大量的UI改动可能引起Alpha版本用户的感官差异。单击确定继续运行。", vbInformation， "主版本与UI Branch 2 同时更新说明")
+        MsgBox("欢迎来到AOTU推理游戏！
+你将要扮演侦探，揪出这场案件的所有杀人犯！
+准备好！单击确定开始。", vbExclamation， "欢迎")
     End Sub
+
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
 
@@ -12,25 +16,35 @@
 别过来……别过来……
 人影像是没有发现他一样，停住了，然后转身往另一个方向走去。
 确定那人已经离开，他松了一口气，转过头来，打算起身离开。只听到啊一声，
-下一刻，惨叫声划破了夜空。")
+下一刻，惨叫声划破了夜空。", vbOKOnly, "第一章")
     End Sub
 
     Private Sub 退出ToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles 退出ToolStripMenuItem.Click
-        End
+        Dim Msg   ' 声明变量。
+        ' 设置信息文本。
+        Msg = "确定要退出吗?"
+        If MsgBox(Msg, vbQuestion + vbYesNo, "退出确认") = vbYes Then
+            End
+        End If
     End Sub
 
     Private Sub 刷新ToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles 刷新ToolStripMenuItem.Click
-        Button1.Visible = True
-        Button2.Visible = True
-        Button3.Visible = True
-        Button4.Visible = True
-        Button5.Visible = True
-        Button6.Visible = True
-        Button7.Visible = True
-        Button8.Visible = True
-        Button9.Visible = True
-        Button10.Visible = True
-        Button11.Visible = True
+        Dim Msg   ' 声明变量。
+        ' 设置信息文本。
+        Msg = "是否重新开局?您的当前进度可能会丢失！"
+        If MsgBox(Msg, vbExclamation + vbYesNo, "重新开局") = vbYes Then
+            Button1.Visible = True
+            Button2.Visible = True
+            Button3.Visible = True
+            Button4.Visible = True
+            Button5.Visible = True
+            Button6.Visible = True
+            Button7.Visible = True
+            Button8.Visible = True
+            Button9.Visible = True
+            Button10.Visible = True
+            Button11.Visible = True
+        End If
     End Sub
 
     Private Sub Label1_Click(sender As Object, e As EventArgs)
@@ -55,33 +69,17 @@
             CheckBox14.Checked = False And
             CheckBox15.Checked = False And
             CheckBox16.Checked = False Then
-            toppings &= "全部正确"
+            toppings &= "完全正确。您可以查看答案。"
         Else
             If CheckBox2.Checked = True OrElse CheckBox5.Checked = True OrElse CheckBox9.Checked = True OrElse CheckBox11.Checked = True Then
-                toppings &= "部分正确"
+                toppings &= "部分正确或超出答案范围。(凶手只有4个)，您可以在思考后查看答案证实。"
             Else
-                toppings &= "错误"
+                toppings &= "完全错误。推荐您再思考一下后查看答案。"
             End If
         End If
         If toppings <> "" Then
-            MsgBox("您的结果为：" & toppings)
+            MsgBox("您的结果为：" & toppings， vbInformation, "结果")
         End If
-    End Sub
-
-    Private Sub TextBox1_TextChanged(sender As Object, e As EventArgs)
-
-    End Sub
-
-    Private Sub CheckBox3_CheckedChanged(sender As Object, e As EventArgs) Handles CheckBox3.CheckedChanged
-
-    End Sub
-
-    Private Sub Label2_Click(sender As Object, e As EventArgs) Handles Label2.Click
-
-    End Sub
-
-    Private Sub Label3_Click(sender As Object, e As EventArgs) Handles Label3.Click
-
     End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
@@ -97,7 +95,7 @@
 二人来的时候，紫堂幻还是躺在那里，伤口上的血液几乎快要凝固了。
 [有些人为了积分什么都干得出来。]雷狮把自己的想法说了出来，[排名高的不敢动，紫堂幻和你还有那个小子组了那么久的队，积分也不菲。加上实力这么弱……]
 [事情没那么简单。]格瑞看着紫堂幻的手势似乎是在保护着什么，便皱了皱眉头。
-随即一个微小的动作被他捕捉到了。")
+随即一个微小的动作被他捕捉到了。", vbOKOnly, "第二章")
     End Sub
 
     Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
@@ -111,7 +109,7 @@
 而嘉德罗斯此时的眼中只有对面楼格瑞手上抱着东西走进了金的宿舍。
 那个似乎很像是某位已经死去的人的宠物
 [呵。]
-[走，我们去找格瑞的麻烦去。]")
+[走，我们去找格瑞的麻烦去。]", vbOKOnly, "第三章")
     End Sub
 
     Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
@@ -123,7 +121,7 @@
 [格瑞？]
 嘉德罗斯识趣地没有把下面的话接上去。
 他当然没有把怀疑的目光放在格瑞身上，那么大的窟窿虽然很有可能是烈斩造成的。
-但他和格瑞上次打架后烈斩已经被送去寒冰湖修理了，这是嘉德罗斯亲眼看见的。")
+但他和格瑞上次打架后烈斩已经被送去寒冰湖修理了，这是嘉德罗斯亲眼看见的。", vbOKOnly, "第四章")
     End Sub
 
     Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
@@ -142,7 +140,7 @@
 安迷修出了门后，便往金的宿舍的反方向去了。
 [格瑞？]
 格瑞示意让雷狮过来。
-雷狮看见的是三个小斯巴达的其中一个，看着格瑞对床安迷修的武器正发抖。")
+雷狮看见的是三个小斯巴达的其中一个，看着格瑞对床安迷修的武器正发抖。", vbOKOnly, "第五章")
     End Sub
 
     Private Sub Button6_Click(sender As Object, e As EventArgs) Handles Button6.Click
@@ -153,7 +151,7 @@
 [不需要解释什么吗？]
 一旁的安莉洁给了凯莉一样东西，那个看上去像是一条领带。
 [最后的骑士……]
-[安迷修？]")
+[安迷修？]", vbOKOnly, "第六章")
     End Sub
 
     Private Sub Button7_Click(sender As Object, e As EventArgs) Handles Button7.Click
@@ -167,7 +165,7 @@
 [是我干的。]
 艾比很干脆地承认了。
 [我看不惯那个没马骑士，就杀了他，至于星月魔女，那和我可没有关系。]
-一旁的埃米正拉着艾比示意她别乱讲话。")
+一旁的埃米正拉着艾比示意她别乱讲话。", vbOKOnly, "第七章")
     End Sub
 
     Private Sub Button8_Click(sender As Object, e As EventArgs) Handles Button8.Click
@@ -181,7 +179,7 @@
 [？]
 [正好可以嫁祸给你，所以，这个藏好。]
 格瑞给了来人一张纸条。
-[去找莱娜。]")
+[去找莱娜。]", vbOKOnly, "第八章")
     End Sub
 
     Private Sub Button9_Click(sender As Object, e As EventArgs) Handles Button9.Click
@@ -195,7 +193,7 @@
 [嘿你们看见帕洛斯了吗？]
 状况外的佩利这么说道。
 [没有。]
-[怎么可能，这里确实有帕洛斯的气味啊。]")
+[怎么可能，这里确实有帕洛斯的气味啊。]", vbOKOnly, "第九章")
     End Sub
 
     Private Sub Button10_Click(sender As Object, e As EventArgs) Handles Button10.Click
@@ -206,7 +204,7 @@
 [救……]
 救谁？
 卡米尔不知道，他只是看了看手中的东西。
-[……]")
+[……]", vbOKOnly, "第十章")
     End Sub
 
     Private Sub Button11_Click(sender As Object, e As EventArgs) Handles Button11.Click
@@ -217,7 +215,7 @@
 ……
 [没事， 都死了。]
 [你的伤怎么样？]
-[被贯穿了非实体而已， 我身后那位就不好了。]")
+[被贯穿了非实体而已， 我身后那位就不好了。]", vbOKOnly, "终章(第十一章)")
     End Sub
 
     Private Sub Button12_Click(sender As Object, e As EventArgs) Handles Button12.Click
@@ -231,17 +229,21 @@
 7.安迷修离开格瑞宿舍后去了学院后山 雷狮也是哦
 8.cp安艾 玛德
 9.黑金不存在，但……
-提示按钮将不会隐藏，您可以查看多次。")
+提示按钮将不会隐藏，您可以查看多次。", vbInformation, "游戏提示")
     End Sub
     Private Sub 确定查看ToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles 确定查看ToolStripMenuItem.Click
-        MsgBox("来吧我们分 <gong〉析〈bu〉答案。
+        Dim Msg   ' 声明变量。
+        ' 设置信息文本。
+        Msg = "是否查看答案？"
+        If MsgBox(Msg, vbQuestion + vbYesNo, "确认查看答案") = vbYes Then
+            MsgBox("来吧我们分 <gong〉析〈bu〉答案。
   看懵了的小天使,
-  看完这个你们会更懵233333。")
-        MsgBox("第一章：
+  看完这个你们会更懵233333。", vbOKOnly, "答案")
+            MsgBox("第一章：
   这个只是一个经过而已并沒有什么实际性作用。
   紧了紧身上的衣服说明藏着什么东西〈和线索一
-  对应〉发生时间在晚上get~")
-        MsgBox(" 第二章:
+  对应〉发生时间在晚上get~"， vbOKOnly, "答案")
+            MsgBox(" 第二章:
   紫堂幻死了腹部被贯穿(贯穿伤)然后倒地了
   三个小斯巴达。  〈线索中有说到其中一个活着>
   后山挤满了人。
@@ -255,13 +257,13 @@
   血液都快要凝固了，应该和某种属性有关。
   顺便格瑞捕捉到的动作，就是线索里提到的小斯
   巴达<而紫堂幻的东西可以根据后文推测出被小
-  斯巴达拿了〉。")
-        MsgBox("第三章:
+  斯巴达拿了〉。"， vbOKOnly, "答案")
+            MsgBox("第三章:
 此时金依旧没有在众人的视线中出现。而格瑞抱
   着什么东西进了金的宿舍。
   <这个东西依旧是紫堂幻的小斯巴达> 
-  重点: 鬼狐天冲这几天不在校。")
-        MsgBox("第四章:
+  重点: 鬼狐天冲这几天不在校。"， vbOKOnly, "答案")
+            MsgBox("第四章:
  金死了，伤口按照和格瑞打了好几次的嘉嘉来说
   是烈斩造成的。
   脸上不可置信的表情只能说明这个杀了他的是他
@@ -275,8 +277,8 @@
   烈斩，而烈斩所有者是格瑞。
   但是嘉嘉说，烈斩在修复中。
   所以从中推断凶手拥有驱使烈斩的能力，但凶手并非是格瑞本人。
-  所以凶手是鬼狐。")
-        MsgBox("第五章:
+  所以凶手是鬼狐。"， vbOKOnly, "答案")
+            MsgBox("第五章:
   格瑞理所当然的被众人怀疑了，而安迷修和雷狮
   是信任格瑞的。
   但是与安选修单纯地询问小斯巴达的下落的时候,
@@ -295,16 +297,16 @@
   故安迷修，鬼狐有嫌疑。
   于是雷狮去后山做的事情就是去比对伤痕，用于
   确认这是否真的是双剑造成的。
-  重点:安迷修和雷狮去后山的时间有先后。")
-        MsgBox("第六章:
+  重点:安迷修和雷狮去后山的时间有先后。"， vbOKOnly, "答案")
+            MsgBox("第六章:
  领带的确是安迷修的，安选修是先去后山的那个。
   而后去后山的雷狮，死了。
   卡米尔只是在思考，为什么雷狮会出现在后山。
   俗话说知道的太多是活不长的，雷狮死于剧情杀/ (开玩笑的>
   虽然没有对雷狮伤口的描写，
   但是通过凯莉她们凭借一条领带就开始怀疑安迷修，
-  可以猜测伤口可能也是个贯穿伤之类的。")
-        MsgBox("第七章:
+  可以猜测伤口可能也是个贯穿伤之类的。"， vbOKOnly, "答案")
+            MsgBox("第七章:
   安迷修没有否认去过后山，也没有否认自己杀了雷狮。
   按照安迷修性格来说是就是是不是就是不是。
   也就是说在安迷修的意识之中，
@@ -324,8 +326,8 @@
   至于艾比，那个话和线索cp安艾有联系。
   通过埃米的表现可以看出来艾比在撤谎。
   所以艾比的话没有半毛钱可信度，单纯的只是想
-  和安哥一起狗带（殉情）而已。")
-        MsgBox("第八章:
+  和安哥一起狗带（殉情）而已。"， vbOKOnly, "答案")
+            MsgBox("第八章:
   卡卡和格瑞吵起来。
   格瑞表现很淡定。
   通过下文<可以嫁祸给你><我可能明天就要死
@@ -336,8 +338,8 @@
   这时候格瑞让卡卡去找莱娜，并交给了他东西。
   通过线索中格瑞了解大部分真相来说，这个凶手格瑞已经能猜出来是鬼狐了。
   而那个东西就是小斯巴达手上的。
-  而此时格瑞提到了<赴约>。")
-        MsgBox("第九章:
+  而此时格瑞提到了<赴约>。"， vbOKOnly, "答案")
+            MsgBox("第九章:
   格瑞和嘉嘉都挂于同一个地方了。
   经常打架的场地是个误导性线索。
   联系上文赴约，会让你们直接联系到是他俩约互
@@ -358,14 +360,14 @@
   好嘉嘉来了。
   于是黑帕一挑二获得胜利。
   <黑化有多牛叉详情参考第一季第三十二集，黑
-  金一拳教吸收百人之力的鬼狐做人〉")
-        MsgBox("第十章:
+  金一拳教吸收百人之力的鬼狐做人〉"， vbOKOnly, "答案")
+            MsgBox("第十章:
   莱娜想要救人。
   <救>这个字第九章也有不过是写在烈斩上的SOS。
   莱娜想要救格瑞吗?
   莱娜想要救的是鬼狐。
-  为什么，看最后。")
-        MsgBox("第十一章:
+  为什么，看最后。"， vbOKOnly, "答案")
+            MsgBox("第十一章:
   我猜很多人看懵逼了的多半是因为你不知道第十一章讲的究竟是什么。
   我告诉你这个第十一章是两个凶手的对话。
   〈然后你还是不知道对话的两个人是谁〉
@@ -378,8 +380,8 @@
   <没想到你真的那么好心。>
   这句话耳熟吗?我敢保证你听过这句话的另一种
   表述方式一一没想到银爵说的居然是真的。
-  是啊这个人是帕帕。")
-        MsgBox("<凯觎那东西的狐狸也从笼子里逃走了哦。>
+  是啊这个人是帕帕。"， vbOKOnly, "答案")
+            MsgBox("<凯觎那东西的狐狸也从笼子里逃走了哦。>
   狐狸很简单，就是指鬼狐。
   联系到鬼狐几天不在校，所以可能是被限制住了
   自己的行动。
@@ -391,8 +393,8 @@
   然后鬼狐哥哥的下落究竟是什么。
   <都死了。>
   yes都死了。那杀了鬼狐小哥哥的是谁。
-  我们见提示最后一个。")
-        MsgBox("黑金不存在但是.....
+  我们见提示最后一个。"， vbOKOnly, "答案")
+            MsgBox("黑金不存在但是.....
   但是什么?因为说出来会太明显所以我让你们猜啊。
   但是黑化存在啊。黑化存在那黑化的始作俑者就存在啊。
   始作俑者存在,那银爵就存在啊。
@@ -412,8 +414,8 @@
   正好此时银爵发现了鬼狐，就和鬼狐打起来了，
   剧情里也存在鬼天盟，所以菜娜虚弱的原因正是
   因为鬼狐吸收了她的力量。
-  于是鬼狐GG。")
-        MsgBox("而莱娜是因为被鬼狐吸收力量后太过虚弱然后GG。
+  于是鬼狐GG。"， vbOKOnly, "答案")
+            MsgBox("而莱娜是因为被鬼狐吸收力量后太过虚弱然后GG。
   看到鬼狐身上的伤猜到鬼狐找过安迷修的银爵，
   让帕洛斯先去解决安迷修。
   而安述修此时和凯莉在一起。
@@ -430,8 +432,8 @@
   而帕帕约来的格瑞(格瑞以为对手是鬼狐，结果
   是黑化的帕洛斯)，同时也因为被断掉的烈斩上
   的求救信息而吸引到格瑞身边的嘉德罗斯，二打
-  一打不过GG了。")
-        MsgBox("而正与帕帕以为，接触过那个东西的人都已经死
+  一打不过GG了。"， vbOKOnly, "答案")
+            MsgBox("而正与帕帕以为，接触过那个东西的人都已经死
   了，那么东西应该在瑞哥身上时。
   瑞哥早有先见之明转移了这个东西。
   那么现在大家是不是有这样一个疑问。
@@ -446,21 +448,24 @@
   鬼狐天冲→杀了金，紫堂幻间接杀了菜娜
   线索给你的都是重要的，除了cp那个玛德只是
   我开玩笑写上去的。
-  玛德cp全程来秀恩爱的好吗。")
-        MsgBox("以上为该谜题的思路和答案。
-文案作者:半青不白 版权所有。")
+  玛德cp全程来秀恩爱的好吗。"， vbOKOnly, "答案")
+            MsgBox("以上为该谜题的思路和答案。
+文案作者:半青不白 版权所有。"， vbInformation, "答案版权")
+        End If
     End Sub
 
     Private Sub 关于AOTU推理游戏ToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles 关于AOTU推理游戏ToolStripMenuItem.Click
         MsgBox("软件作者:雷翎 Lrtray.（半次元:雷翎）
 Created By Visual Studio 2017.
-文案作者:半青不白（半次元:我似鸽莫得感情的刺客）")
+文案作者:半青不白（半次元:我似鸽莫得感情的刺客）"， vbInformation, "关于")
     End Sub
 
     Private Sub 更新日志ToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles 更新日志ToolStripMenuItem.Click
         MsgBox("UI Branch 2的更新日志请在更新说明中查看。
 以下是Alpha普通版本的更新日志。
 更新日志:
+V1.5
+修改大量Msgbox标题，增加警告信息，增加退出提示。（与UI Branch 2 V1.1版更新相同)
 V1.4
 1.微调UI。
 2.调整临时文本框大小。
@@ -478,16 +483,18 @@ V1.0
 项目构建。
 --------------------------
 可能有Bug或者一些错误，欢迎指正。
-半次元:@雷翎 Bilibili:@雷家皮皮翎")
+半次元:@雷翎 Bilibili:@雷家皮皮翎"， vbInformation, "更新日志")
     End Sub
 
     Private Sub UIBranch2更新说明ToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles UIBranch2更新说明ToolStripMenuItem.Click
-        MsgBox("这里是测试版UI界面，可能再可用性上不如V1.4的Alpha普通版。
+        MsgBox("这里是测试版UI界面，可能在可用性上不如V1.4的Alpha普通版。
 以后每次的UI更新将先推送UI Branch的Alpha分支，后推送新版本的Alpha分支。
 UI Branch 2可能随时随地出现大的UI调整，请注意。
 UI Branch 2 版本更新日志
+V1.1：
+修改大量Msgbox标题，增加警告信息，增加退出提示。（与普通Alpha分支1.5版更新相同)
 V1.0：
 1.修改文字提示语言，更加简练。
-2.提供GroupBox，为章节与嫌疑人中的选项括起来。")
+2.提供GroupBox，为章节与嫌疑人中的选项括起来。"， vbInformation, "UIBranch2 更新日志")
     End Sub
 End Class
